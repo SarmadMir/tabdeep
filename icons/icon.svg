@@ -1,0 +1,20 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#4285f4"/>
+  
+  <!-- Timeline visualization -->
+  <g fill="white">
+    <!-- Vertical line -->
+    <rect x="44" y="32" width="4" height="64" rx="2"/>
+    
+    <!-- Timeline dots -->
+    <circle cx="46" cy="40" r="8"/>
+    <circle cx="46" cy="64" r="8"/>
+    <circle cx="46" cy="88" r="8"/>
+    
+    <!-- Timeline bars -->
+    <rect x="58" y="36" width="32" height="8" rx="4"/>
+    <rect x="58" y="60" width="32" height="8" rx="4"/>
+    <rect x="58" y="84" width="32" height="8" rx="4"/>
+  </g>
+</svg>
