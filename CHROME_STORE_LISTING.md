@@ -4,7 +4,7 @@
 **TabDeep**
 
 ## Short Description (132 characters max)
-Deep tab-level history analysis across all your Chrome devices with detailed visit insights and cross-device synchronization.
+Tab history analyzer for Chrome — deep visit insights, cross-device sync, and forensic-level browsing analytics. 100% private.
 
 ## Detailed Description
 
@@ -106,7 +106,7 @@ We're actively building new features based on user feedback. Found something use
 **Category**: Productivity  
 **Price**: Free
 **Age Rating**: General Audiences
-**Keywords**: tab history, browser history, cross device, sync, analytics, productivity, privacy, forensic analysis, tab tracking, device sync, visit analytics
+**Keywords**: tab history, browser history, chrome history viewer, cross device sync, tab analytics, productivity, privacy, forensic analysis, tab tracking, device sync, visit analytics, browsing insights, tab manager
 
 **Screenshots Needed**:
 1. Main interface showing device list with tab counts
