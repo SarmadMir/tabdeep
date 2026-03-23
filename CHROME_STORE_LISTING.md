@@ -4,119 +4,96 @@
 **TabDeep**
 
 ## Short Description (132 characters max)
-Tab history analyzer for Chrome — deep visit insights, cross-device sync, and forensic-level browsing analytics. 100% private.
+Tab history analyzer — deep visit insights, cross-device sync, and forensic-level browsing analytics. 100% private.
 
 ## Detailed Description
 
-🔬 **TabDeep - Deep Tab-Level History Analysis**
+**TabDeep — Deep Tab-Level History Analysis**
 
-Go beyond basic browser history. TabDeep provides forensic-level insights into every tab across all your devices - showing not just WHAT you visited, but HOW you got there, WHEN, and from WHICH device.
+Go beyond basic browser history. TabDeep gives you forensic-level insights into every tab across all your Chrome devices — showing not just what you visited, but how you got there, when, and from which device.
 
-✨ **Deep Analysis Features:**
-🔍 **Individual Tab Tracking** - Forensic analysis of every tab's visit history
-📱 **Cross-Device Tab Sync** - See tab activity from ALL your Chrome devices  
-🎯 **Visit Method Analytics** - Know HOW you accessed each page (clicked link, typed URL, search result, bookmark, etc.)
-⏰ **Timeline Analysis** - Detailed chronological tracking per tab
-🔄 **Real-Time Sync Status** - Live updates of device sync across your network
-🗑️ **Smart History Management** - Visit pages or remove items directly from interface
-🔍 **Advanced Search** - Filter across devices, tabs, dates, and access methods
+**Deep Analysis Features**
 
-🎨 **Professional Interface:**
-• Beautiful dark/light theme with automatic detection
-• Clean, modern design optimized for productivity
-• Smooth animations and professional interactions  
-• Real-time refresh without page reloads
-• Responsive design for all screen sizes
+- Individual Tab Tracking — Full visit history for every tab across devices
+- Cross-Device Sync — See tab activity from all your Chrome-synced devices (laptop, phone, work PC, tablet)
+- Visit Method Analytics — Know how you accessed each page: clicked a link, typed a URL, search result, bookmark, form submission, or auto-suggested
+- Timeline Analysis — Chronological tracking with date grouping and time stamps
+- Real-Time Sync Status — See when each device last synced
+- Smart History Management — Revisit pages or remove items directly from the interface
+- Advanced Search — Filter across devices, tabs, dates, and access methods with keyboard shortcut support (Ctrl+F)
 
-🛡️ **Privacy First:**
-✅ **100% Local Processing** - All data analysis happens in YOUR browser
-✅ **No External Servers** - Zero data transmission to third parties
-✅ **Chrome Sync Only** - Uses Chrome's built-in sync infrastructure
-✅ **No Tracking** - No analytics, no data collection, no ads
-✅ **Open Source Approach** - Transparent development
+**Professional Interface**
 
-🎯 **Perfect For:**
-• **Digital Professionals** tracking research workflows across devices
-• **Students** managing study resources and research paths  
-• **Power Users** wanting deep insights into browsing patterns
-• **Multi-Device Users** (laptop, phone, work PC, tablet)
-• **Privacy-Conscious Users** seeking local-only processing
+- Dark and light themes with automatic system detection
+- Clean, modern design built for productivity
+- Smooth expand/collapse animations
+- Real-time data refresh without page reloads
+- Infinite scroll for browsing large history sets
 
-💡 **How TabDeep Goes Deeper:**
+**Privacy First**
 
-**Basic History Extensions Show:**
-❌ "You visited google.com at 3:00 PM"
+- 100% Local Processing — All data stays in your browser. Nothing leaves your machine.
+- No External Servers — Zero data transmission to third parties
+- Chrome Sync Only — Uses Chrome's built-in sync infrastructure, no proprietary sync
+- No Tracking — No analytics, no telemetry, no ads, no data collection
+- Transparent Development — Open source on GitHub
 
-**TabDeep Shows:**
-✅ "You visited google.com at 3:00 PM from your iPhone by clicking a link from reddit.com, spent 2 minutes, then opened 3 related tabs"
+**Who Uses TabDeep**
 
----
+- Researchers and professionals tracking multi-device workflows
+- Students managing study resources across devices
+- Security-conscious users auditing their own browsing patterns
+- Power users who want deeper insight than Chrome's built-in history page
+- Multi-device users who need to trace activity across laptop, phone, and tablet
 
-## 🌟 **Completely Free - No Catch**
+**What Makes TabDeep Different**
 
-TabDeep is **100% free** with no ads, no premium features, no data collection, and no hidden costs. This is our initial release with more productivity tools coming soon!
+Chrome's built-in history shows: "You visited google.com at 3:00 PM"
 
-**If you find TabDeep useful:**
-☕ **Support Development** - https://ko-fi.com/sarmadmir
-⭐ **Leave a Review** - Help others discover TabDeep
-💬 **Share Feedback** - Your ideas shape future updates
-🚀 **Follow for Updates** - More deep-analysis tools coming
+TabDeep shows: "You visited google.com at 3:00 PM from your iPhone, via a link from reddit.com — with 4 other visits this week, 2 by search result and 2 by direct access"
 
 ---
 
-## 🛠️ **This is Just V1.0**
+**Completely Free**
 
-TabDeep is the **first in our series** of deep-analysis productivity tools. Based on YOUR feedback, upcoming features include:
+TabDeep is free with no ads, no premium tier, and no hidden costs. If you find it useful, you can support development at ko-fi.com/sarmadmir — but there's absolutely no obligation.
 
-🔜 **Coming Soon:**
-• Export functionality (CSV, JSON) for data analysis
-• Advanced analytics dashboard with usage patterns
-• Bookmark correlation and relationship mapping  
-• Custom time ranges and filtering options
-• Team/enterprise features for organizations
-• API access for power users and researchers
+**What's Next**
 
-💬 **Your Input Drives Development:**
-We're actively building new features based on user feedback. Found something useful? Want a specific feature? We want to hear from you!
+We're actively developing new features based on user feedback:
+- Export functionality (CSV, JSON)
+- Analytics dashboard with usage patterns
+- Custom time range filtering
+- Bookmark correlation mapping
 
-**Connect with us:**
-📧 Email: sarmadmir13@gmail.com
-🐙 GitHub: https://github.com/SarmadMir
-☕ Support: https://ko-fi.com/sarmadmir
+Your feedback shapes the roadmap. Reach out anytime:
+- GitHub: github.com/SarmadMir/tabdeep
+- Email: sarmadmir13@gmail.com
+- Support: ko-fi.com/sarmadmir
 
----
+**Technical Details**
 
-## 🔧 **Technical Excellence**
-
-• **Chrome 88+** (Latest Manifest V3)
-• **Requires Chrome Sync** for cross-device features
-• **Works Offline** for current device analysis
-• **Auto-Updates** included
-• **No Dependencies** - Pure JavaScript for performance
-• **Memory Efficient** - Optimized for large datasets
+- Built on Manifest V3 (Chrome's latest extension platform)
+- Pure JavaScript — zero external dependencies
+- Chrome 88+ and Edge 88+ compatible
+- Memory-efficient with lazy loading and search debouncing
+- Works offline for current device history analysis
 
 ---
-
-**Try TabDeep today and discover the forensic-level insights hiding in your browsing patterns!**
-
-*This extension represents the future of browser analytics - deep, detailed, and completely private.*
 
 ## Store Metadata
 
-**Category**: Productivity  
+**Category**: Productivity
 **Price**: Free
 **Age Rating**: General Audiences
-**Keywords**: tab history, browser history, chrome history viewer, cross device sync, tab analytics, productivity, privacy, forensic analysis, tab tracking, device sync, visit analytics, browsing insights, tab manager
 
-**Screenshots Needed**:
-1. Main interface showing device list with tab counts
-2. Expanded tab view showing visit history details  
-3. Search functionality across devices
-4. Dark/light theme comparison
-5. Individual tab visit analytics
+**Screenshots** (1280x800):
+1. Main history view — current device with date-grouped entries and visit times
+2. Other Devices panel — synced devices with tab counts and sync timestamps
+3. Expanded tab detail — visit method analytics (clicked link, typed, search result)
+4. Search in action — filtered results across history
+5. Dark mode — full interface in dark theme
 
 **Promotional Images**:
-- Feature highlighting cross-device sync
-- Before/after comparison with basic Chrome history
-- Privacy-focused messaging
-- "Deep analysis" positioning
+- Small promo tile: 440x280
+- Large promo tile (marquee): 1400x560

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TabDeep - Tab History Analysis</title>
   <style>
     body {
@@ -826,23 +827,6 @@
       color: #8ab4f8;
     }
 
-    .current-tabs-section {
-      padding: 20px;
-      background: rgba(26,115,232,0.03);
-      border-radius: 12px;
-      margin-bottom: 32px;
-    }
-
-    body.dark .current-tabs-section {
-      background: rgba(138,180,248,0.03);
-    }
-
-    .tabs-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
     .current-device .device-header {
       background: rgba(26,115,232,0.03);
     }
@@ -1046,8 +1030,8 @@
         </button>
       </div>
     </div>
-    <div class="nav-group">
-      <div class="nav-item active" data-view="history">
+    <nav class="nav-group" aria-label="Main navigation">
+      <div class="nav-item active" data-view="history" role="tab" aria-selected="true" tabindex="0">
         <div class="nav-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.25 2.52.77-1.28-3.52-2.09V8z"/>
@@ -1055,7 +1039,7 @@
         </div>
         Current Device
       </div>
-      <div class="nav-item" data-view="devices">
+      <div class="nav-item" data-view="devices" role="tab" aria-selected="false" tabindex="0">
         <div class="nav-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/>
@@ -1063,8 +1047,8 @@
         </div>
         Other Devices
       </div>
-    </div>
-    
+    </nav>
+
     <div class="support-section">
       <div class="support-info">
         <div class="created-by">
@@ -1088,7 +1072,7 @@
           <path d="M21 21l-4.35-4.35"/>
         </svg>
       </div>
-      <input type="text" id="searchInput" class="search-input" placeholder="Search history..." autocomplete="off">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search history... (Ctrl+F)" autocomplete="off" aria-label="Search browsing history">
     </div>
     <div id="historyView" class="view active"></div>
     <div id="devicesView" class="view"></div>

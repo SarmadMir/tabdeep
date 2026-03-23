@@ -451,10 +451,22 @@ function setupNavigation() {
   const searchInput = document.getElementById('searchInput');
   
   navItems.forEach(item => {
+    // Support keyboard activation
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        item.click();
+      }
+    });
+
     item.addEventListener('click', async () => {
-      // Update active state
-      navItems.forEach(nav => nav.classList.remove('active'));
+      // Update active state and ARIA
+      navItems.forEach(nav => {
+        nav.classList.remove('active');
+        nav.setAttribute('aria-selected', 'false');
+      });
       item.classList.add('active');
+      item.setAttribute('aria-selected', 'true');
 
       // Show corresponding view
       const viewId = item.dataset.view + 'View';
@@ -585,7 +597,7 @@ async function renderFilteredCurrentDeviceHistory(filteredTabs, filteredHistory,
           <div class="tab-section" data-url="${sanitizeHtml(tab.url)}">
             <div class="tab-header">
               <div class="tab-icon">
-                <img class="tab-favicon" src="${faviconUrl}">>
+                <img class="tab-favicon" src="${faviconUrl}" alt="">
               </div>
               <div class="tab-info">
                 <div class="tab-title">${sanitizeHtml(tab.title) || 'Untitled'}</div>
@@ -702,8 +714,7 @@ async function renderFilteredCurrentDeviceHistory(filteredTabs, filteredHistory,
             <div class="history-time">${timeString}</div>
             <div class="history-content">
               <div class="tab-icon">
-                <img class="tab-favicon" src="${faviconUrl}">> 
-                     >
+                <img class="tab-favicon" src="${faviconUrl}" alt="">
               </div>
               <div class="history-info">
                 <div class="history-title">${sanitizeHtml(item.title) || 'Untitled'}</div>
@@ -780,7 +791,7 @@ function filterDevices(searchTerm) {
   if (filteredDevices.length === 0) {
     devicesView.innerHTML = `
       <div class="no-results">
-        No matches found for "${searchTerm}"
+        No matches found for "${sanitizeHtml(searchTerm)}"
       </div>
     `;
     return;
@@ -1315,8 +1326,7 @@ async function renderCurrentDeviceHistory() {
             <div class="history-time">${timeString}</div>
             <div class="history-content">
               <div class="tab-icon">
-                <img class="tab-favicon" src="${faviconUrl}">> 
-                     >
+                <img class="tab-favicon" src="${faviconUrl}" alt="">
               </div>
               <div class="history-info">
                 <div class="history-title">${sanitizeHtml(item.title) || 'Untitled'}</div>
@@ -1588,7 +1598,7 @@ async function createHistoryItemElement(item) {
     <div class="history-actions">
       <button class="action-btn visit-btn" title="Visit page">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h6"/>
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
           <polyline points="15,3 21,3 21,9"/>
           <line x1="10" y1="14" x2="21" y2="3"/>
         </svg>
@@ -1596,7 +1606,7 @@ async function createHistoryItemElement(item) {
       <button class="action-btn delete delete-btn" title="Remove from history">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polyline points="3,6 5,6 21,6"/>
-          <path d="M19,6v14a2,2,0,0,1-2,2H7a2,2,0,0,1-2-2V6m3,0V4a2,2,0,0,1,2,2h4a2,2,0,0,1,2,2V6"/>
+          <path d="M19,6v14a2,2,0,0,1-2,2H7a2,2,0,0,1-2-2V6m3,0V4a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2V6"/>
         </svg>
       </button>
     </div>
