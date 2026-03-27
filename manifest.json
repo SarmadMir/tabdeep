@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "TabDeep",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Tab history analyzer — deep visit insights, cross-device sync, and forensic-level browsing analytics. 100% private.",
     "permissions": [
       "sessions",
