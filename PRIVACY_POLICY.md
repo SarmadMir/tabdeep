@@ -70,7 +70,6 @@ TabDeep is a Chrome extension that provides detailed insights into your browser 
 - **`tabs`**: To monitor currently open tabs and their status
 - **`favicon`**: To display website icons for visual identification
 - **`storage`**: To remember your theme preference (dark/light mode)
-- **`<all_urls>`**: Required for favicon access across all websites
 
 **Chrome Security:**
 - All permissions are enforced by Chrome's extension security model
@@ -136,8 +135,8 @@ TabDeep is a Chrome extension that provides detailed insights into your browser 
 ## Contact Information
 
 **For Privacy Questions:**
-- **Extension Developer**: [Your Name/Company]
-- **Contact Method**: [Your Email]
+- **Extension Developer**: Sarmad Mir
+- **Contact Method**: sarmadmir13@gmail.com
 - **Response Time**: 48 hours for privacy-related inquiries
 
 **For Technical Issues:**

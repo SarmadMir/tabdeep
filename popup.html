@@ -1,8 +1,10 @@
 <!-- popup.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' chrome-extension:">
+  <title>TabDeep</title>
   <style>
     body {
       width: 300px;
@@ -17,7 +19,7 @@
     }
 
     .error {
-      color: #d93025;
+      color: #a50e0e;
       text-align: center;
       padding: 16px;
       background: #fce8e6;
